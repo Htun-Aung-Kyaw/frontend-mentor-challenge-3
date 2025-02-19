@@ -16,7 +16,6 @@ function scrollEventListener()
     console.log("Event Listener Called.");
 
     cards.forEach((card, index) => {
-
         let windowHeight = window.innerHeight;
         let sectionRectTop = card.getBoundingClientRect().top;
 

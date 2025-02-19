@@ -8,12 +8,16 @@ body,h1,h2,h3,h4,h5,h6,p,figure{
     margin: 0;
     padding: 0;
 }
+html{
+    display: flex;
+    justify-content: center;
+}
 
 body{
+    width: 100%;
     font-family: "Barlow Semi Condensed", serif;
     background-color: #F5F5F5;
     color: white;
-    max-width: 1440px;
 }
 section>h2{
     font-size: 1.2rem;
@@ -33,6 +37,9 @@ header{
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+.landing{
+    width: 200px;
 }
 
 .quotation{
@@ -68,6 +75,7 @@ main{
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
     margin: 30px;
+    max-width: 1440px;
 }
 
 .card{
@@ -136,10 +144,8 @@ footer{
 /*Laptop*/
 @media screen and (min-width: 1025px) {
     body{
-        /* margin: 0 auto; */
         display: flex;
         flex-direction: column;
-        /* justify-content: center; */
         align-items: center;
     }
     main{
